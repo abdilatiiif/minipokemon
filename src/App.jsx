@@ -1,5 +1,9 @@
+import Pokemon from "./Pokemon";
+import data from "./data";
+
 function App() {
-  return <h1>mini pokemon</h1>;
+  console.log(data);
+  return <Pokemon />;
 }
 
 export default App;
