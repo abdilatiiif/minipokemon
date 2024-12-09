@@ -1,0 +1,35 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", "sans-serif";
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pokemon--container {
+  width: 20rem;
+  height: 30rem;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.pokemon--info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pokemon--img {
+  width: 200px;
+}

@@ -1,18 +1,16 @@
-export default function Pokemon() {
+/* eslint-disable react/prop-types */
+export default function Pokemon(props) {
+  console.log(props);
+
   return (
     <div className="pokemon--container">
-      <img
-        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
-        alt="pokemon"
-      />
+      <img className="pokemon--img" src={props.image} alt="pokemon" />
       <div className="pokemon--info">
-        <div className="pokemon--name--id">
-          <h3>Name: Pickachu</h3>
-          <span>ID: #0025</span>
-        </div>
-        <p>Height: 0.6 meter</p>
-        <p>Abilities: electric</p>
-        <p>category: bit rat/mouse</p>
+        <h3>Name: {props.name}</h3>
+        <p>ID: {props.id}</p>
+        <p>Height: {props.height} meter</p>
+        <p>Abilities: {props.abilities}</p>
+        <p>category: {props.category}</p>
       </div>
     </div>
   );
